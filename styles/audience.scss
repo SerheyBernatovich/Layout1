@@ -1,0 +1,66 @@
+.audience {
+  display: flex;
+  justify-content: center;
+  background-color: rgba(0, 161, 198, 0.07);
+
+  &__wrapper {
+    text-align: center;
+    padding: 50px 15px;
+    @include for-large {
+      padding: 108px 0px 110px;
+    }
+  }
+  &__section-title {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 34px;
+  }
+  &__title {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 40px;
+    letter-spacing: -0.36px;
+    margin: 0;
+    margin-top: 17px;
+    @include for-large {
+      max-width: 555px;
+      margin: auto;
+      margin-top: 24px;
+
+      font-size: 56px;
+      line-height: 56px;
+      letter-spacing: -0.5px;
+    }
+  }
+  &__text {
+    font-size: 24px;
+    line-height: 34px;
+    margin-top: 18px;
+    margin-bottom: 30px;
+    @include for-large {
+      margin: auto;
+      margin-top: 30px;
+      margin-bottom: 34px;
+      max-width: 555px;
+    }
+  }
+  &__button {
+    @include for-large {
+      width: 160px;
+      margin: 0;
+    }
+    &_learn {
+      color: $text-color;
+      margin-bottom: 40px;
+    }
+  }
+  &__cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    @include for-large {
+      margin-top: 111px;
+      justify-content: center;
+    }
+  }
+}

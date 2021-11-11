@@ -1,0 +1,21 @@
+.nav {
+  display: none;
+  @include for-large {
+    display: flex;
+    margin-left: auto;
+  }
+  &__link {
+    display: block;
+    margin-right: 50px;
+    text-decoration: none;
+    color: $text-color;
+    line-height: 25px;
+    font-size: 18px;
+    &:last-child {
+      margin-right: 56px;
+    }
+    &_selected {
+      font-weight: 700;
+    }
+  }
+}

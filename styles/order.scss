@@ -1,0 +1,85 @@
+.order {
+  background-color: $bacg-lignt-color;
+
+  &__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 50px 15px;
+    background-color: $bacg-lignt-color;
+    @include for-large {
+      padding: 73px 0 72px;
+      max-width: 1400px;
+    }
+  }
+  &__img {
+    min-width: 200px;
+    max-width: 400px;
+    @include for-large {
+      margin-right: 121px;
+    }
+  }
+  &__content {
+    @include for-large {
+      display: flex;
+      align-items: flex-start;
+      flex-direction: column;
+      max-width: 550px;
+    }
+  }
+  &__title {
+    text-align: center;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 40px;
+    letter-spacing: -0.357143px;
+    margin: 0;
+    margin-top: 40px;
+  }
+  &__subtitle {
+    margin: 0;
+    margin-top: 18px;
+    font-size: 22px;
+    line-height: 32px;
+  }
+  &__form {
+    @include for-large {
+      display: flex;
+      align-items: center;
+      margin-top: 26px;
+
+      width: 100%;
+    }
+  }
+  &__input {
+    margin-top: 40px;
+    background-color: $color-white;
+    border: 1px solid $border-color;
+    border-radius: 2px;
+    height: 48px;
+    width: 100%;
+    text-align: center;
+    line-height: 13px;
+    @include for-large {
+      margin-top: 0;
+    }
+  }
+  &__button {
+    margin-top: 12px;
+    @include for-large {
+      margin-top: 0;
+      margin-left: 10px;
+    }
+  }
+  &__bottom-text {
+    margin: 0;
+    margin-top: 10px;
+    font-size: 14px;
+    line-height: 22px;
+    color: $text-color;
+    &_link {
+      color: $bacg-blue;
+      text-decoration: underline;
+    }
+  }
+}

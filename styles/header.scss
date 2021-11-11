@@ -1,0 +1,30 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  background-color: $bacg-white;
+  height: 64px;
+  @include for-large {
+    background-color: $bacg-pink;
+    height: 62px;
+    align-items: center;
+    width: 1140px;
+  }
+
+  &__wrapper {
+    background-color: $bacg-pink;
+    @include for-large {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 39px;
+      padding-bottom: 0;
+    }
+  }
+  &__button {
+    display: none;
+    @include for-large {
+      display: block;
+    }
+  }
+}
