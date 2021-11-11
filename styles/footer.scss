@@ -1,164 +1,197 @@
 .footer {
-  &__topline {
-    margin: 0px;
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+
+  @include for-large-up {
+    width: 1400px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  &-navigation {
+    margin: 0;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    border-bottom: 1px solid hsla(0, 0%, 89%, 1);
-    padding-bottom: 40px;
-    margin-top: 44px;
-    @include for-large {
-      align-items: flex-start;
-    }
-  }
-  &__logo {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    @include for-large {
-      flex-direction: row;
-    }
-    &_img {
-      height: 60px;
-      width: 60px;
-      @include for-large {
-        margin-right: 15px;
-      }
-    }
-    & &_text {
-      text-align: center;
-    }
-    &_subtitle {
-      margin-top: 5px;
-      font-size: 18px;
-      line-height: 25px;
-      text-align: center;
-      opacity: 0.6;
-      font-weight: 300;
-    }
-  }
-  .footer-loto-title {
-    @include for-large {
-      text-align: left;
-    }
-  }
-  &__aditional-text {
-    display: none;
-    @include for-large {
-      display: block;
-      margin-top: 26px;
-      line-height: 26px;
-      font-size: 18px;
-      opacity: 0.6;
-      width: 360px;
-    }
-  }
-  &__downloads {
-    margin: 31px 30px 0px;
-    display: flex;
-    justify-content: center;
-    @include for-large {
-      margin: 0px;
-      margin-top: 25px;
-    }
-    &_item {
-      margin-right: 10px;
-      &:last-child {
-        margin-right: 0;
-      }
-    }
-  }
-  &__inner {
-    @include for-large {
-      display: flex;
-      margin: 0 auto;
+
+    @include for-large-up {
       width: 1140px;
+      margin: 0 auto;
+      height: 338px;
+      display: flex;
+      flex-direction: row;
     }
   }
 
-  &__about-links {
-    margin: 0px 15px 30px;
-    display: flex;
-    flex-direction: column;
-    @include for-large {
-      flex-direction: row;
-      margin-top: 16px;
-      margin-left: 126px;
+  &-description {
+    display: none;
+    width: 360px;
+    font-size: 18px;
+    line-height: 26px;
+    margin-top: 26px;
+    color: $text-color-light-grey;
+
+    @include for-large-up {
+      display: block;
     }
-    &_title {
-      font-weight: bold;
-      font-size: 22px;
-      line-height: 28px;
-      color: $text-color;
-      margin: 0px;
-    }
-    &_item {
-      width: 265px;
-      margin-top: 30px;
-      @include for-large {
-        &:last-child {
-          margin-left: 29px;
-        }
-      }
-    }
-    &_link {
-      list-style-type: none;
-      text-decoration: none;
-      padding: 0;
+  }
+
+  &__line {
+    border-top: 1px solid #2b292d;
+    width: 100%;
+    opacity: 0.1;
+    margin: 0;
+    margin-top: 40px;
+
+    @include for-large-up {
       margin: 0;
-      font-size: 18px;
-      line-height: 30px;
-      color: #2b292d;
-      opacity: 0.6;
-      margin-top: 18p;
-    }
-    &_text {
-      display: flex;
-      flex-direction: column;
-      margin-top: 18px;
     }
   }
-  &__media-links {
-    margin-left: 15px;
+
+  &-links {
     display: flex;
     flex-direction: column;
-    @include for-large {
-      border-top: 1px solid hsla(270, 5%, 17%, 0.1);
+    margin-left: 15px;
+    @include for-large-up {
+      flex-direction: row;
+      width: 1140px;
+      margin: 0 auto;
+      align-items: center;
       height: 50px;
-      width: 98%;
-    }
-    &_inner {
-      @include for-large {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        width: 1140px;
-        margin: 0 auto;
-      }
-    }
-    &_documents {
-      line-height: 50px;
-      font-size: 14px;
     }
   }
-  &__link {
+
+  @include for-large-down {
+    .logo {
+      display: none;
+    }
+  }
+}
+
+.about-company {
+  margin-top: 44px;
+}
+
+.downloads {
+  margin: 25px 15px 0 15px;
+  display: flex;
+  justify-content: center;
+
+  @include for-large-up {
+    justify-content: left;
+    margin: 0;
+    margin-top: 25px;
+  }
+
+  &__item {
+    margin-right: 10px;
+  }
+}
+
+.additional-navigation {
+  margin-left: 15px;
+  margin-right: 15px;
+  display: flex;
+  flex-direction: column;
+
+  @include for-large-up {
+    margin-top: 60px;
+    flex-direction: row;
+    margin-left: auto;
+  }
+
+  &__column {
+    @include for-large-up {
+      margin-top: 0;
+      margin-right: 29px;
+    }
+  }
+}
+
+.nav-links {
+  width: 265px;
+  margin-top: 30px;
+
+  &__title {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 28px;
+    color: #2b292d;
+    margin: 0;
+  }
+
+  &__list {
+    font-size: 18px;
+    line-height: 30px;
+    list-style-type: none;
+    color: $text-color-light-grey;
+    margin: 0;
+    margin-top: 18px;
+    padding: 0;
+  }
+}
+
+.terms {
+  line-height: 22px;
+  font-size: 14px;
+  margin-top: 30px;
+
+  @include for-large-up {
+    line-height: 50px;
+    margin-top: 0;
+  }
+
+  &__items {
     text-decoration: none;
-    color: $text-color;
-    opacity: 0.6;
+    color: $text-color-light-grey;
     margin-right: 22px;
-    &:last-child {
-      margin-right: 0;
+  }
+}
+
+.social-links {
+  margin-top: 30px;
+  margin-bottom: 23px;
+
+  @include for-large-up {
+    margin: 0 0 0 auto;
+  }
+
+  &__item {
+    margin-left: 20px;
+    text-decoration: none;
+
+    &:first-child {
+      margin-left: 0;
     }
   }
-  &__media-icons {
-    margin-top: 30px;
-    margin-bottom: 22px;
-    &_item {
-      width: 18px;
-      margin-left: 20px;
-      &:first-child {
-        margin-left: 0;
-      }
-    }
+}
+
+.logo-vertical {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @include for-large-up {
+    display: none;
+  }
+
+  &__image {
+    width: 60px;
+    height: 60px;
+  }
+
+  &__name {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 25px;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  &__description {
+    font-style: 18px;
+    line-height: 25px;
+    text-align: center;
+    color: $text-color-light-grey;
   }
 }
