@@ -1,4 +1,6 @@
-# Layout1Foundation
+# Layout1
+
+Foundation
 
 Responsive from device width 320px
 
