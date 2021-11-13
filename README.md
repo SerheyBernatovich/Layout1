@@ -13,6 +13,6 @@ _Used technologies_
 - BEM methodology
 - Mobile first
 
-[link](https://github.com/SerheyBernatovich/Layout1)
+[link](https://SerheyBernatovich.github.io/Layout1)
 
 Developed by Serhey Bernatovich
