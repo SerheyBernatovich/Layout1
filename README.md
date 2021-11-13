@@ -13,6 +13,6 @@ _Used technologies_
 - BEM methodology
 - Mobile first
 
-[link](http://127.0.0.1:5500/index.html)
+[link](file:///C:/Users/1/Desktop/LayoutFirst/index.html)
 
 Developed by Serhey Bernatovich
