@@ -45,6 +45,12 @@
       display: none;
     }
   }
+  &__menu-icon {
+    width: 18px;
+    height: 13px;
+    background-image: url('https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/icon-hamburger.png');
+    display: inline-block;
+  }
 }
 
 .navigation {
